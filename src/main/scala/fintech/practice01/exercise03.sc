@@ -7,7 +7,7 @@ class Hippo(weight: Double) extends Animal {
   def printWeight(): Unit = println(weight + "KG")
 }
 
-val hippo: Hippo = ???
+val hippo: Hippo = new Hippo(100)
 hippo.printWeight()
 // println(hippo.weight)
 
@@ -20,3 +20,6 @@ class Turtle(val ageInMonth: Int) extends Animal {
   val age = ageInMonth / 12
 }
 
+val turtle = new Turtle(2399)
+println(turtle.age)
+println(turtle.ageInMonth)
