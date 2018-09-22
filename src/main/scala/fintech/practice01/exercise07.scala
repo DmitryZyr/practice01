@@ -1,9 +1,13 @@
 package fintech.practice01
 
-// Сделайте свою игру запускаемым приложением
+import scala.io.StdIn
+import scala.util.Random
 
-//object Game {
-//  def main(args: Array[String]): Unit = {
-//
-//  }
-//}
+// Используйте while чтобы добавить в свою игру возможность играть несколько раз
+// (спрашивайте у игрока хочет ли он сыграть еще раз)
+
+object Exercise07 {
+  def main(args: Array[String]): Unit = {
+    ???
+  }
+}
