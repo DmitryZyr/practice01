@@ -12,6 +12,6 @@ class Hangman(io: IODevice) {
       if (stage.number != 0)
         io.printLine(stage.toString)
     }
-    io.printLine(if (game.getStatus() == HangmanGameStatus.Failed) "You are dead" else "You guessed the word")
+    io.printLine(if (game.getStatus() == HangmanGameStatus.Failed) s"You are dead. The word was $word" else s"You guessed the word $word")
   }
 }

@@ -25,7 +25,7 @@ class TestIO(base: String) extends IODevice {
         throw new IllegalStateException(s"Print operation out of order, expected read of '$expected'")
 
       if (expected != line)
-        throw new IllegalStateException(s"Unexpected print out, should be '$expected'")
+        throw new IllegalStateException(s"Unexpected print out '$line', should be '$expected'")
 
       queue = queue.tail
     }
