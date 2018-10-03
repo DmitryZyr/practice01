@@ -50,9 +50,9 @@ class HangmanGameTest extends FlatSpec with Matchers {
     val game = new HangmanGame(word)
 
     for (move <- moves) {
-      game.getWord() should be(move.word)
-      game.getStatus() should be(move.status)
-      game.getStage().number should be(move.stage)
+      game.getWord should be(move.word)
+      game.getStatus should be(move.status)
+      game.getStage.number should be(move.stage)
       if (move.status == HangmanGameStatus.Started)
         game.guessLetter(move.guessedLetter)
     }
